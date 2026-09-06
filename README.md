@@ -53,7 +53,7 @@ Linear Regression was used to predict wheat yield using Year as the independent 
 
 ### Graph
 
-![Linear Regression Graph](linear_regression_graph.png)
+![Linear Regression Graph](https://github.com/RiyaRiya184/Machine-Learning/blob/b06461ad943e6ad744766c3eeb2b34347a8b6809/Images/Linear%20regression%20graph.png)
 
 ---
 
@@ -72,7 +72,7 @@ Polynomial Regression with degree 2 was used to model the relationship between Y
 
 ### Graph
 
-![Polynomial Regression Graph](polynomial_regression_graph.png)
+![Polynomial Regression Graph]()
 
 ---
 
