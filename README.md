@@ -72,7 +72,7 @@ Polynomial Regression with degree 2 was used to model the relationship between Y
 
 ### Graph
 
-![Polynomial Regression Graph]()
+![Polynomial Regression Graph](https://github.com/RiyaRiya184/Machine-Learning/blob/ee7a1ee2772ec8276a3b3c5e2a45267924bac4c8/Images/polynomial%20regression%20graph.png)
 
 ---
 
@@ -95,7 +95,7 @@ Multivariate Regression was used to predict wheat yield using:
 
 ### Graph
 
-![Multivariate Regression Graph](multivariate_regression_graph.png)
+![Multivariate Regression Graph]()
 
 ---
 
