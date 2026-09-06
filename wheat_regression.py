@@ -12,7 +12,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 # 1. READ FAOSTAT DATA
 # ============================================================
 
-df = pd.read_csv("wheat.csv")
+df = pd.read_csv("./datasets/wheat.csv")
 
 print("File loaded successfully!")
 print("Original rows:", len(df))
