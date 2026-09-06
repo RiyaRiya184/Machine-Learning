@@ -95,7 +95,7 @@ Multivariate Regression was used to predict wheat yield using:
 
 ### Graph
 
-![Multivariate Regression Graph]()
+![Multivariate Regression Graph](https://github.com/RiyaRiya184/Machine-Learning/blob/de4610d74da28d274ffb273db50d3199091a14d2/Images/Multivariate%20regression%20graph.png)
 
 ---
 
