@@ -208,15 +208,15 @@ The model correctly classified 119 out of 180 test samples.
 
 ### Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](https://github.com/RiyaRiya184/Machine-Learning/blob/c164798a96bd99bd6c5f13049fa5ae3066847e50/Images/Confusion_matrix.png)
 
 ### Decision Tree
 
-![Decision Tree](images/decision_tree.png)
+![Decision Tree](https://github.com/RiyaRiya184/Machine-Learning/blob/c164798a96bd99bd6c5f13049fa5ae3066847e50/Images/Decision_tree.png)
 
 ### Feature Importance
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance](https://github.com/RiyaRiya184/Machine-Learning/blob/c164798a96bd99bd6c5f13049fa5ae3066847e50/Images/Imp_Features.png)
 
 ## Technologies Used
 
