@@ -388,3 +388,110 @@ pandas
 numpy
 matplotlib
 scikit-learn
+
+---
+---
+---
+# 2. K-Nearest Neighbors (KNN) Classification
+
+## Objective
+
+To implement the K-Nearest Neighbors (KNN) algorithm and classify a new data point using different values of K.
+
+## Dataset
+
+The dataset contains six points with two features and their respective classes:
+
+| Point | X1 | X2 | Class |
+|------|----|----|-------|
+| P1 | 4 | 3 | B |
+| P2 | 3 | 3 | A |
+| P3 | 5 | 5 | A |
+| P4 | 2 | 4 | A |
+| P5 | 8 | 8 | B |
+| P6 | 7 | 2 | B |
+
+The query point is:
+
+**Q = (4,4)**
+
+## Distance Calculation
+
+Euclidean distance was used to calculate the distance between the query point and each training point.
+
+The points were sorted based on their distance from Q.
+
+| Point | Distance | Class |
+|------|----------|-------|
+| P1 | 1.000 | B |
+| P2 | 1.414 | A |
+| P3 | 1.414 | A |
+| P4 | 2.000 | A |
+| P6 | 3.606 | B |
+| P5 | 5.657 | B |
+
+## KNN Classification
+
+The query point was classified using:
+
+- K = 1
+- K = 3
+- K = 5
+
+### Results
+
+| K | Predicted Class |
+|---|-----------------|
+| 1 | B |
+| 3 | A |
+| 5 | A |
+
+## Python Code
+
+```python
+import math
+
+data = [
+    (4, 3, 'B'),
+    (3, 3, 'A'),
+    (5, 5, 'A'),
+    (2, 4, 'A'),
+    (8, 8, 'B'),
+    (7, 2, 'B')
+]
+
+Q = (4, 4)
+
+distances = []
+
+for x1, x2, cls in data:
+    d = math.sqrt((x1 - Q[0])**2 + (x2 - Q[1])**2)
+    distances.append((d, cls))
+
+distances.sort()
+
+for k in [1, 3, 5]:
+    neighbors = distances[:k]
+
+    A = sum(cls == 'A' for d, cls in neighbors)
+    B = sum(cls == 'B' for d, cls in neighbors)
+
+    prediction = 'A' if A > B else 'B'
+
+    print(f"K = {k} → Class = {prediction}")
+```
+
+## Output
+
+```text
+K = 1 → Class = B
+K = 3 → Class = A
+K = 5 → Class = A
+```
+
+## Conclusion
+
+The KNN algorithm was successfully implemented to classify the query point **Q = (4,4)**. The classification changes with the value of K. For K = 1, the predicted class is **B**, while for K = 3 and K = 5, the predicted class is **A**.
+---
+---
+---
