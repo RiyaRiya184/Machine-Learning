@@ -392,7 +392,7 @@ scikit-learn
 ---
 ---
 ---
-# 2. K-Nearest Neighbors (KNN) Classification
+# 4. K-Nearest Neighbors (KNN) Classification
 
 ## Objective
 
