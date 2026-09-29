@@ -575,7 +575,7 @@ The model is evaluated using:
 * Recall
 * F1-score
 * Confusion Matrix
-##Screenshots
+### Screenshots
 ![SVM Outputs](https://github.com/RiyaRiya184/Machine-Learning/blob/71cfb62d4c222b0e594cf96eb6c970aa7e269e8a/Images/svm%20confusion%20matrix.png)
 ![](https://github.com/RiyaRiya184/Machine-Learning/blob/71cfb62d4c222b0e594cf96eb6c970aa7e269e8a/Images/svm%20output.png)
 ## Files
@@ -726,7 +726,10 @@ The ANN model is evaluated using:
 * Recall
 * F1-score
 * Confusion Matrix
-##Screenshots
+
+
+  
+### Screenshots
 ![ANN Outputs](https://github.com/RiyaRiya184/Machine-Learning/blob/71cfb62d4c222b0e594cf96eb6c970aa7e269e8a/Images/ann%20confusion%20matrix.png)
 ![](https://github.com/RiyaRiya184/Machine-Learning/blob/71cfb62d4c222b0e594cf96eb6c970aa7e269e8a/Images/ann%20output.png)
 ## Files
