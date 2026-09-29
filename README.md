@@ -495,3 +495,265 @@ The KNN algorithm was successfully implemented to classify the query point **Q =
 ---
 ---
 ---
+#5.  Machine Learning Practical – Support Vector Machine (SVM)
+
+## Aim
+
+To implement the **Support Vector Machine (SVM)** algorithm for classification using a Loan Approval dataset and predict whether a loan application will be approved or not.
+
+## Dataset
+
+**Dataset:** Loan Approval Dataset
+
+The dataset contains information about loan applicants such as:
+
+* Age
+* Annual Income
+* Loan Amount
+* Credit Score
+* Employment Years
+* Education
+* Marital Status
+* Property Area
+* Self Employed
+* Loan Approved
+
+`ApplicantID` is used only as an identifier and is not used for prediction.
+
+## Algorithm
+
+Support Vector Machine (SVM) is a supervised machine learning algorithm used mainly for classification.
+
+In this practical, the **RBF (Radial Basis Function) kernel** is used to classify loan applications into:
+
+* Approved
+* Not Approved
+
+## Steps
+
+1. Import the required Python libraries.
+2. Load the Loan Approval dataset.
+3. Remove the `ApplicantID` column.
+4. Separate the input features and target variable.
+5. Convert the target values:
+
+   * `Y` → 1
+   * `N` → 0
+6. Separate numerical and categorical features.
+7. Apply StandardScaler to numerical features.
+8. Apply OneHotEncoder to categorical features.
+9. Split the dataset into training and testing sets using an 80:20 ratio.
+10. Create an SVM classifier using the RBF kernel.
+11. Train the SVM model using the training data.
+12. Predict loan approval for the test data.
+13. Calculate the accuracy.
+14. Generate the classification report and confusion matrix.
+
+## Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib
+
+## Model Parameters
+
+```text
+Kernel = RBF
+C = 1.0
+Gamma = scale
+Test Size = 20%
+Random State = 42
+```
+
+## Evaluation Metrics
+
+The model is evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+
+## Files
+
+```text
+svm.py
+07_loan_approval.csv
+
+```
+
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install pandas scikit-learn matplotlib
+```
+
+Run the program:
+
+```bash
+python svm.py
+```
+
+## Result
+
+The SVM model successfully classifies loan applications as **Approved** or **Not Approved**.
+
+The program displays the accuracy, classification report and confusion matrix.
+
+## Conclusion
+
+The Support Vector Machine algorithm was successfully implemented on the Loan Approval dataset. The model was trained using preprocessed applicant information and used to classify loan approval outcomes.
+---
+---
+---
+# 6. Machine Learning Practical – Artificial Neural Network (ANN)
+
+## Aim
+
+To implement an **Artificial Neural Network (ANN)** for classification using a Loan Approval dataset and predict whether a loan application will be approved or not.
+
+## Dataset
+
+**Dataset:** Loan Approval Dataset
+
+The dataset contains information about loan applicants such as:
+
+* Age
+* Annual Income
+* Loan Amount
+* Credit Score
+* Employment Years
+* Education
+* Marital Status
+* Property Area
+* Self Employed
+* Loan Approved
+
+`ApplicantID` is an identifier and is not used as an input feature.
+
+## Algorithm
+
+An Artificial Neural Network (ANN) is a supervised machine learning algorithm inspired by the structure of biological neural networks.
+
+The ANN consists of:
+
+* Input layer
+* Hidden layers
+* Output layer
+
+In this practical, the ANN predicts whether a loan application is:
+
+* Approved
+* Not Approved
+
+## Steps
+
+1. Import the required Python libraries.
+2. Load the Loan Approval dataset.
+3. Remove the `ApplicantID` column.
+4. Separate features and target variable.
+5. Convert:
+
+   * `Y` → 1
+   * `N` → 0
+6. Identify numerical and categorical features.
+7. Standardize the numerical features.
+8. One-hot encode the categorical features.
+9. Split the dataset into training and testing sets using an 80:20 ratio.
+10. Create an ANN using `MLPClassifier`.
+11. Use two hidden layers containing 16 and 8 neurons.
+12. Use the ReLU activation function.
+13. Train the ANN using the training dataset.
+14. Predict the loan approval results for the test dataset.
+15. Calculate accuracy.
+16. Generate the classification report and confusion matrix.
+
+## ANN Architecture
+
+```text
+Input Features
+      |
+      v
+Input Layer
+      |
+      v
+Hidden Layer 1
+16 Neurons
+ReLU Activation
+      |
+      v
+Hidden Layer 2
+8 Neurons
+ReLU Activation
+      |
+      v
+Output Layer
+      |
+      v
+Loan Approved / Not Approved
+```
+
+## Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib
+
+## Model Parameters
+
+```text
+Hidden Layers = (16, 8)
+Activation = ReLU
+Solver = Adam
+Maximum Iterations = 1000
+Test Size = 20%
+Random State = 42
+```
+
+## Evaluation Metrics
+
+The ANN model is evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+
+## Files
+
+```text
+ann.py
+07_loan_approval.csv
+
+```
+
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install pandas scikit-learn matplotlib
+```
+
+Run the program:
+
+```bash
+python ann.py
+```
+
+## Result
+
+The ANN model successfully predicts whether a loan application will be **Approved** or **Not Approved**.
+
+The program displays the accuracy, classification report and confusion matrix.
+
+## Conclusion
+
+The Artificial Neural Network algorithm was successfully implemented on the Loan Approval dataset. The model learned patterns from applicant information and classified loan applications into approved and not approved categories.
+****
